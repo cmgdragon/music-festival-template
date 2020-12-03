@@ -11,3 +11,5 @@ document.querySelector('.mobile-menu__cross').addEventListener('click', ({target
   document.querySelector('.mobile-header > i').style.visibility = "visible";
   document.getElementsByTagName('html')[0].style.overflow = "unset";
 })
+
+window.onload = () => document.getElementsByTagName('video')[0].play();
