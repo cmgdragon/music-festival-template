@@ -52,6 +52,12 @@
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     background: linear-gradient(10grad, rgba(0, 0, 0, 0.788), rgba(128, 128, 128, 0.74));
+
+    &:hover {
+      color: $primary-color;
+      background: $bg-color;
+    }
+
   }
 
 }
