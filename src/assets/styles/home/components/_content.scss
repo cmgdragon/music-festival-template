@@ -5,8 +5,14 @@
   align-content: center;
   grid-template-columns: 1fr;
   gap: 1.5em;
-  height: 100vh;
+  height: 90vh;
   clear: both;
+
+  @media (max-width: $mobile-breakpoint), (max-height: $mobile-breakpoint-height) {
+    overflow-y: scroll;
+    align-content: start;
+  }
+
 }
 
 @supports not (display: grid) {
@@ -200,7 +206,7 @@
 
 .content__title {
   font-size: 5rem;
-  font-weight: bold;
+  font-weight: 500;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;

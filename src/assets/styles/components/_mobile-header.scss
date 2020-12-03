@@ -8,7 +8,7 @@
   .mobile-header__icon {
     float: right;
     margin: 1.5rem 2rem 0 2rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
   }
 
@@ -69,10 +69,18 @@
 .logo-mobile {
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .mobile-header__logo-aguja {
   position: absolute;
+  max-height: 6rem;
+  width: auto;
+}
+
+.mobile-header__logo-disco {
+  max-height: 6rem;
+  width: auto;
 }
 
 .mobile-header__line {
