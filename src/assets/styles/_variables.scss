@@ -1,0 +1,17 @@
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$bg-color: rgb(252, 252, 252);
+$primary-color: rgb(37, 37, 37);
+$secondary-color: rgb(13, 201, 207);
+$primary-contrast-color:  rgb(240, 239, 239);
+$secondary-contrast-color:  rgb(13, 201, 207);
+
+$mobile-breakpoint: 675px;
+$mobile-breakpoint-height: 630px;
+
+/* BS4 Theming */
+
+$theme-colors: (
+ "primary": $primary-color // pon el código de color que prefieras
+);

@@ -1,0 +1,14 @@
+/* Import variables */
+@import "../variables";
+
+/* Componentes */
+@import "../components/header";
+@import "../components/mobile-header";
+@import "../components/footer";
+@import "components/group-list";
+
+/* Import common layout */
+@import "../common";
+
+/* Import page layout */
+@import "./layout";

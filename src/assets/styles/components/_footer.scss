@@ -1,0 +1,65 @@
+.footer {
+  padding: 1rem 0;
+  display: flex;
+  background-color: $primary-color;
+  width: 100vw;
+  justify-content: space-evenly;
+  color: $primary-contrast-color;
+  align-items: center;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+  }
+
+}
+
+.footer__logo-disco {
+  height: auto;
+  max-height: 4.5rem;
+  width: auto;
+  justify-self: center;
+}
+
+.footer__logo-aguja {
+  height: auto;
+  z-index: 1;
+  max-height: 4.5rem;
+  width: auto;
+  position: absolute;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-left: 1rem;
+  }
+
+}
+
+.footer__link {
+  margin: 1rem 0;
+}
+
+.footer__social {
+
+  margin: 1rem 0;
+
+  i {
+    margin: .5rem;
+    padding: .4rem 0;
+    border: 2px solid $primary-contrast-color;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $secondary-contrast-color;
+    }
+
+  }
+
+}

@@ -1,0 +1,85 @@
+.group-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+  }
+
+}
+
+.group-list__horario {
+  display: flex;
+  justify-content: space-around;
+
+  div {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+
+    i {
+      margin-right: .5rem;
+      font-size: 2rem;
+      color: $primary-color;
+    }
+
+  }
+
+}
+
+.group-list__nombre {
+  text-align: center;
+}
+
+.card {
+  max-width: 30rem;
+  min-width: 15rem;
+  width: 100%;
+  margin: 2rem;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 1rem 0;
+  }
+
+}
+
+.card__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 20rem;
+  width: auto;
+}
+
+[data-group=imagine-dragons] {
+  background-image: url("../../../assets/images/groups/imagine-dragons.jpg");
+}
+
+[data-group=placeholder] {
+  background-image: url("https://via.placeholder.com/750");
+  background-color: $primary-color;
+}
+
+.card__website {
+  position: absolute;
+  top: 1rem;
+  left: 85%;
+  background-color: white;
+  width: 2.5rem;
+  border-radius: 50%;
+  text-align: center;
+  padding: .2rem;
+
+  i {
+    font-size: 2rem;
+
+    &:hover {
+      color: $secondary-color !important;
+    }
+
+  }
+
+}

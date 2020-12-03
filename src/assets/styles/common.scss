@@ -1,0 +1,62 @@
+/* Normalize */
+@import "normalize.css";
+
+/* Bootstrap */
+@import "~bootstrap/scss/bootstrap.scss";
+
+@keyframes rotacion-disco {
+  from {transform: rotate(0)};
+  to {transform: rotate(360deg)};
+}
+
+@keyframes movimiento-aguja {
+  0% {transform: translateY(0)};
+  50% {transform: translateY(-.2rem)};
+  100% {transform: translateY(0)};
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  background-color: white;
+  color: black;
+  height: 100%;
+}
+
+.logo__image {
+  height: auto;
+  max-height: 10rem;
+  width: auto;
+}
+
+a:hover, a:link, a:visited {
+  text-decoration: none;
+  color: unset;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  clear: both;
+  margin: 3rem;
+  padding: 3rem;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 3rem 0;
+    margin: 3rem .5rem;
+  }
+
+}

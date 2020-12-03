@@ -1,0 +1,75 @@
+.tickets {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.tickets__tier {
+  display: flex;
+  margin: 1rem 0;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  background-color: $primary-color;
+  border-radius: 500px;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    clip-path: unset;
+    padding: 5rem;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    border-radius: 500px;
+  }
+
+}
+
+[data-tickets=tier1] {
+  background-image: url('../../../assets/images/tickets/tier1.png');
+}
+
+.tickets__image {
+  height: 9rem;
+  width: 9rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tickets__title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: $primary-contrast-color;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 1rem 0;
+  }
+}
+
+.tickets__price {
+  font-size: 1.5rem;
+  color: white;
+  padding: .5rem;
+  border-radius: 50%;
+  border: 2px solid $primary-contrast-color;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 1rem 0;
+  }
+}
+
+.tickets__comprar {
+  height: 2rem;
+  border-radius: 25px;
+  border-color: $primary-contrast-color;
+  color: white;
+  border-width: .2rem;
+  padding: 0 1rem 2rem 1rem;
+
+  &:hover{
+    color: $primary-color;
+    background-color: $primary-contrast-color;
+    border-color: unset;
+  }
+
+}
