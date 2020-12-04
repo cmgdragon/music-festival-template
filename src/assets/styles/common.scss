@@ -5,14 +5,27 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 @keyframes rotacion-disco {
-  from {transform: rotate(0)};
-  to {transform: rotate(360deg)};
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes movimiento-aguja {
-  0% {transform: translateY(0)};
-  50% {transform: translateY(-.2rem)};
-  100% {transform: translateY(0)};
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.2rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 html {
@@ -38,12 +51,15 @@ body {
   width: auto;
 }
 
-a:hover, a:link, a:visited {
+a:hover,
+a:link,
+a:visited {
   text-decoration: none;
   color: unset;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -56,7 +72,6 @@ section {
 
   @media (max-width: $mobile-breakpoint) {
     padding: 3rem 0;
-    margin: 3rem .5rem;
+    margin: 3rem 0.5rem;
   }
-
 }

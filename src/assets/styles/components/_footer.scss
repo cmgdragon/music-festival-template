@@ -4,13 +4,12 @@
   background-color: $primary-color;
   width: 100vw;
   justify-content: space-evenly;
-  color: $primary-contrast-color;
+  color: $bg-color;
   align-items: center;
 
   @media (max-width: $mobile-breakpoint) {
     flex-direction: column;
   }
-
 }
 
 .footer__logo-disco {
@@ -35,7 +34,6 @@
   p {
     margin-left: 1rem;
   }
-
 }
 
 .footer__link {
@@ -43,13 +41,12 @@
 }
 
 .footer__social {
-
   margin: 1rem 0;
 
   i {
-    margin: .5rem;
-    padding: .4rem 0;
-    border: 2px solid $primary-contrast-color;
+    margin: 0.5rem;
+    padding: 0.4rem 0;
+    border: 2px solid $bg-color;
     border-radius: 5px;
     width: 2rem;
     height: 2rem;
@@ -57,9 +54,7 @@
 
     &:hover {
       cursor: pointer;
-      background-color: $secondary-contrast-color;
+      background-color: $secondary-color;
     }
-
   }
-
 }

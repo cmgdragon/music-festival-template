@@ -1,14 +1,12 @@
 .header {
-
-  @media (max-width: $mobile-breakpoint), (max-height: $mobile-breakpoint-height) {
+  @media (max-width: $mobile-breakpoint) {
     display: none;
   }
-
 }
 
 .header__navmenu {
   background-color: $primary-color;
-  color: $primary-contrast-color;
+  color: $bg-color;
   position: relative;
   padding: 1rem 0;
   height: 4rem;
@@ -52,22 +50,20 @@
   height: 8rem;
   border-radius: 5rem;
   background-color: $primary-color;
-  box-shadow: 0px 6px 6px 0px black;
+  box-shadow: 0 6px 6px 0 black;
 }
 
 .header__link {
-
   padding: 0 1rem;
-  transition: border-bottom-width .3s ease-in;
-  border: 0px solid white;
-  border-bottom-width: 0px;
+  transition: border-bottom-width 0.3s ease-in;
+  border: 0 solid white;
+  border-bottom-width: 0;
   font-weight: 300;
   font-size: 1.2rem;
 
   &:hover {
     border-bottom-width: 5px;
   }
-
 }
 
 .header__item-logo {

@@ -1,3 +1,16 @@
-html, body {
+html,
+body {
   overflow: hidden;
+}
+
+.header {
+  @media (max-height: $mobile-breakpoint-height) {
+    display: none;
+  }
+}
+
+.mobile-header {
+  @media (max-height: $mobile-breakpoint-height) {
+    display: unset;
+  }
 }

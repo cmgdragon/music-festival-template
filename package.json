@@ -8,7 +8,8 @@
     "parcel:build": "parcel build src/*.html --public-url ./ --out-dir dist --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader",
     "dev": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build",
+    "stylelint": "stylelint src/assets/styles/**/**/*.scss",
+    "build": "npm-run-all stylelint clean parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "repository": {
@@ -33,12 +34,14 @@
     "postcss-clean": "^1.1.0",
     "postcss-preset-env": "^6.7.0",
     "rimraf": "^2.7.1",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
-    "normalize": "^0.3.1",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.16.1"
   }

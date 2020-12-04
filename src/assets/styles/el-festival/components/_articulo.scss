@@ -14,7 +14,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  filter: brightness(.4);
+  filter: brightness(0.4);
   background-image: url('../../../assets/images/el-festival-info.jpg');
   position: absolute;
   left: 0;
@@ -62,7 +62,6 @@ section {
   @media (max-width: $mobile-breakpoint) {
     min-width: auto;
   }
-
 }
 
 .articulo__razon {
@@ -74,7 +73,6 @@ section {
 }
 
 .articulo__imagen {
-
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
@@ -86,5 +84,4 @@ section {
     max-height: 550px;
     text-align: center;
   }
-
 }

@@ -7,7 +7,6 @@
   @media (max-width: $mobile-breakpoint) {
     flex-direction: column;
   }
-
 }
 
 .group-list__horario {
@@ -20,13 +19,11 @@
     padding: 1rem 0;
 
     i {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       font-size: 2rem;
       color: $primary-color;
     }
-
   }
-
 }
 
 .group-list__nombre {
@@ -42,7 +39,6 @@
   @media (max-width: $mobile-breakpoint) {
     margin: 1rem 0;
   }
-
 }
 
 .card__image {
@@ -71,7 +67,7 @@
   width: 2.5rem;
   border-radius: 50%;
   text-align: center;
-  padding: .2rem;
+  padding: 0.2rem;
 
   i {
     font-size: 2rem;
@@ -79,7 +75,5 @@
     &:hover {
       color: $secondary-color !important;
     }
-
   }
-
 }
