@@ -1,8 +1,8 @@
 module.exports = {
-  purge: [
-    './src/**/*.html',
-    './src/**/*.js',
-  ],
+  purge: {
+  enabled: true,
+  content: ['./**/*.scss']
+  },
   darkMode: false,
   theme: {
     screens: {

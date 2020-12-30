@@ -5,7 +5,7 @@ module.exports = {
     require("tailwindcss")(),
     require("autoprefixer")(),
     purgecss({
-      content: ["./**/*.scss"]
+      content: ["./**/*.html"]
     }),
     require("postcss-clean")(),
     require("postcss-preset-env")({

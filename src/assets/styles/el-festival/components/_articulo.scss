@@ -2,13 +2,13 @@
 
 .articulo { @apply mt-40; }
 
-.articulo__bg-image-apply {
+.articulo__bg-image-fondo {
   background-image: url('../images/el-festival-info.jpg');
   filter: brightness(0.4);
 }
 
 .articulo__bg-image {
-  @apply w-full h-35 bg-fixed bg-no-repeat bg-cover bg-bottom absolute left-0 top-40 articulo__bg-image-apply;
+  @apply w-full h-35 bg-fixed bg-no-repeat bg-cover bg-bottom absolute left-0 top-40 articulo__bg-image-fondo;
 }
 
 .articulo__bg-text {
