@@ -1,60 +1,29 @@
 .footer {
-  padding: 1rem 0;
-  display: flex;
-  background-color: $primary-color;
-  width: 100vw;
-  justify-content: space-evenly;
-  color: $bg-color;
-  align-items: center;
-
-  @media (max-width: $mobile-breakpoint) {
-    flex-direction: column;
-  }
-}
-
-.footer__logo-disco {
-  height: auto;
-  max-height: 4.5rem;
-  width: auto;
-  justify-self: center;
-}
-
-.footer__logo-aguja {
-  height: auto;
-  z-index: 1;
-  max-height: 4.5rem;
-  width: auto;
-  position: absolute;
+  @apply py-4 flex flex-col desktop:flex-row bg-bgcolor w-full justify-evenly text-white items-center;
 }
 
 .footer__copyright {
-  display: flex;
-  align-items: center;
-
-  p {
-    margin-left: 1rem;
-  }
+  @apply flex items-center;
 }
 
-.footer__link {
-  margin: 1rem 0;
+.footer__copyright > p { @apply mt-0 mb-4; }
+
+.footer__logo-disco-aguja {
+  @apply max-h-4.5 h-auto w-auto;
+}
+
+.disco {
+  @apply animate-disco justify-self-center;
+}
+
+.aguja {
+  @apply z-10 animate-aguja absolute;
 }
 
 .footer__social {
-  margin: 1rem 0;
+  @apply my-4 mx-0;
+}
 
-  i {
-    margin: 0.5rem;
-    padding: 0.4rem 0;
-    border: 2px solid $bg-color;
-    border-radius: 5px;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $secondary-color;
-    }
-  }
+.footer__social > i {
+  @apply m-2 py-04 border-2 border-white rounded w-8 h-8 text-center cursor-pointer hover:bg-secondary;
 }

@@ -1,79 +1,40 @@
 .group-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-
-  @media (max-width: $mobile-breakpoint) {
-    flex-direction: column;
-  }
-}
-
-.group-list__horario {
-  display: flex;
-  justify-content: space-around;
-
-  div {
-    display: flex;
-    align-items: center;
-    padding: 1rem 0;
-
-    i {
-      margin-right: 0.5rem;
-      font-size: 2rem;
-      color: $primary-color;
-    }
-  }
-}
-
-.group-list__nombre {
-  text-align: center;
+  @apply flex justify-around items-center flex-wrap;
 }
 
 .card {
-  max-width: 30rem;
-  min-width: 15rem;
-  width: 100%;
-  margin: 2rem;
-
-  @media (max-width: $mobile-breakpoint) {
-    margin: 1rem 0;
-  }
+  @apply relative flex max-w-30 w-full bg-white bg-clip-border border border-gray-300 rounded flex-col desktop:m-8 my-4;
 }
 
 .card__image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  height: 20rem;
-  width: auto;
+  @apply bg-cover bg-no-repeat bg-center w-auto h-80 relative;
 }
 
-[data-group=imagine-dragons] {
-  background-image: url("../../../assets/images/groups/imagine-dragons.jpg");
-}
-
-[data-group=placeholder] {
-  background-image: url("https://via.placeholder.com/750");
-  background-color: $primary-color;
-}
+[data-group=imagine-dragons] { background-image: url('../images/groups/imagine-dragons.jpg'); }
+[data-group=placeholder] { @apply bg-placeholder; }
 
 .card__website {
-  position: absolute;
-  top: 1rem;
-  left: 85%;
-  background-color: white;
-  width: 2.5rem;
-  border-radius: 50%;
-  text-align: center;
-  padding: 0.2rem;
+  @apply absolute top-4 left-85 bg-white w-10 rounded-full text-center p-1;
+}
 
-  i {
-    font-size: 2rem;
+.card__website i {
+  @apply text-3xl hover:text-secondary;
+}
 
-    &:hover {
-      color: $secondary-color !important;
-    }
-  }
+.card__body {
+  @apply flex-auto p-5;
+}
+
+.card__title { @apply mb-3 text-center text-xl; }
+
+.card__horario {
+  @apply flex justify-around;
+}
+
+.card__horario div {
+  @apply flex items-center py-4;
+}
+
+.card__horario > div > i {
+  @apply mr-2 text-3xl text-bgcolor;
 }

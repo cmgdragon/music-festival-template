@@ -1,87 +1,46 @@
-section {
-  margin: 3rem 12vw !important;
-}
+.content { @apply desktop:m-section px-0 desktop:py-12; }
 
-.articulo {
-  margin-top: 40rem;
+.articulo { @apply mt-40; }
+
+.articulo__bg-image-apply {
+  background-image: url('../images/el-festival-info.jpg');
+  filter: brightness(0.4);
 }
 
 .articulo__bg-image {
-  width: 100%;
-  height: 35rem;
-  margin-bottom: 35rem;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  filter: brightness(0.4);
-  background-image: url('../../../assets/images/el-festival-info.jpg');
-  position: absolute;
-  left: 0;
-  top: 10rem;
+  @apply w-full h-35 bg-fixed bg-no-repeat bg-cover bg-bottom absolute left-0 top-40 articulo__bg-image-apply;
 }
 
 .articulo__bg-text {
-  position: absolute;
-  color: #f0efef;
-  padding: 0 1rem;
-  top: 20rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  left: 0;
-  align-items: center;
+  @apply absolute text-primary px-4 top-80 w-full flex flex-col justify-center left-0 items-center;
 }
 
 .articulo__title {
-  font-size: 4rem;
-  font-weight: 300;
+  @apply text-6xl font-light;
 }
 
 .articulo__subtitle {
-  font-size: 2rem;
-  font-weight: 100;
-}
-
-.articulo__paragrafo {
-  margin: 3rem 0;
+  @apply text-3xl font-thin;
 }
 
 .articulo__subheading {
-  font-size: 2.5rem;
-  font-weight: 300;
+  @apply text-4xl font-light;
+}
+
+.articulo__paragrafo { @apply my-12; }
+
+.articulo__imagen {
+  @apply flex justify-center mb-12;
+}
+
+img {
+  @apply w-auto h-auto max-h-550p text-center max-w-none;
 }
 
 .articulo__razones {
-  text-align: center;
-  display: table;
-  min-width: 30rem;
-  margin: 3rem auto;
-
-  @media (max-width: $mobile-breakpoint) {
-    min-width: auto;
-  }
+  @apply text-center table desktop:min-w-30 min-w-auto my-12 mx-auto;
 }
 
 .articulo__razon {
-  margin: 1rem 0;
-  border: 1px solid rgb(158, 158, 158);
-  padding: 1rem;
-  border-radius: 30px;
-  font-size: 1.1rem;
-}
-
-.articulo__imagen {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3rem;
-
-  img {
-    margin-bottom: 3rem auto;
-    width: auto;
-    height: auto;
-    max-height: 550px;
-    text-align: center;
-  }
+  @apply my-4 border border-gray-400 p-4 rounded-full text-lg;
 }

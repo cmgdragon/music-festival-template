@@ -1,78 +1,33 @@
-.header {
-  @media (max-width: $mobile-breakpoint) {
-    display: none;
-  }
-}
+.header { @apply desktop:block hidden; }
 
 .header__navmenu {
-  background-color: $primary-color;
-  color: $bg-color;
-  position: relative;
-  padding: 1rem 0;
-  height: 4rem;
-  display: flex;
-  justify-content: space-around;
-  box-shadow: 0 0 20px 6px black;
-}
-
-.header__logo-aguja {
-  height: auto;
-  max-height: 6rem;
-  width: auto;
-  position: absolute;
-  top: 1.1rem;
-  left: 2.8rem;
-  z-index: 1;
-  animation: movimiento-aguja 2s linear infinite both;
-}
-
-.header__logo-disco {
-  height: auto;
-  max-height: 6rem;
-  width: auto;
-  position: absolute;
-  top: 1.1rem;
-  left: 2.8rem;
-  animation: rotacion-disco 2s linear infinite both;
-}
-
-.header__list {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  align-items: center;
+  @apply bg-bgcolor text-white relative py-4 h-16 flex justify-around shadow-nav;
 }
 
 .header__logo-bg {
-  margin-left: 2.1rem;
-  margin-top: -1.1rem;
-  min-width: 7.5rem;
-  height: 8rem;
-  border-radius: 5rem;
-  background-color: $primary-color;
-  box-shadow: 0 6px 6px 0 black;
+  @apply ml-2.1 -mt-1.1 min-w-7.5 h-32 rounded-5 bg-bgcolor shadow-logo;
 }
 
-.header__link {
-  padding: 0 1rem;
-  transition: border-bottom-width 0.3s ease-in;
-  border: 0 solid white;
-  border-bottom-width: 0;
-  font-weight: 300;
-  font-size: 1.2rem;
-
-  &:hover {
-    border-bottom-width: 5px;
-  }
+.header__logo-disco-aguja {
+  @apply max-h-24 h-auto w-auto absolute top-1.1 left-2.8;
 }
 
-.header__item-logo {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
+.header__list {
+  @apply flex justify-evenly w-full items-center;
 }
 
 .header__active {
-  border-color: $secondary-color;
-  border-bottom-width: 5px;
+  @apply border-b-4 border-secondary;
+}
+
+.header__link {
+  @apply px-4 font-light text-1.2 transition-all hover:border-b-4 hover:border-white;
+}
+
+.disco {
+  @apply animate-disco;
+}
+
+.aguja {
+  @apply z-10 animate-aguja;
 }

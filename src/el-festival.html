@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/el-festival/main.scss">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
     <link rel="icon" type="image/png" href="./assets//images/favicon.png">
     <script src="https://kit.fontawesome.com/bbc3c21183.js" crossorigin="anonymous"></script>
     <title>Music Festival</title>
@@ -14,14 +14,14 @@
         <nav class="header__navmenu">
             <div class="header__logo-bg">
                 <a href="index">
-                    <img src="./assets/images/logo-aguja.png" class="header__logo-aguja">
-                    <img src="./assets/images/logo-disco.png" class="header__logo-disco">
+                    <img src="./assets/images/logo-aguja.png" class="header__logo-disco-aguja aguja">
+                    <img src="./assets/images/logo-disco.png" class="header__logo-disco-aguja disco">
                 </a>
             </div>
             <ul class="header__list">
-                <li><a href="grupos" class="header__link">Grupos</a></li>
-                <li><a href="el-festival" class="header__link header__active">El Festival</a></li>
-                <li><a href="entradas" class="header__link">Comprar entradas</a></li>
+                <li><a href="grupos.html" class="header__link">Grupos</a></li>
+                <li><a href="el-festival.html" class="header__link header__active">El Festival</a></li>
+                <li><a href="#" class="header__link">Comprar entradas</a></li>
             </ul>
         </nav>
     </header>
@@ -29,18 +29,6 @@
     <header class="mobile-header">
         <i class="fa fa-bars mobile-header__icon" aria-hidden="true"></i>
         <div class="mobile-header__line"></div>
-        <nav class="mobile-menu">
-            <ul class="mobile-menu__list">
-                <li class="mobile-menu__cross"><i class="fa fa-times" aria-hidden="true"></i></li>
-                <li class="mobile-menu__item"><a href="grupos">Grupos</a></li>
-                <li class="mobile-menu__item"><a href="el-festival">El Festival</a></li>
-                <li class="mobile-menu__item"><a href="entradas">Comprar entradas</a></li>
-            </ul>
-            <a href="index" class="logo-mobile">
-                <img src="./assets/images/logo-aguja.png" class="mobile-header__logo-aguja">
-                <img src="./assets/images/logo-disco.png" class="mobile-header__logo-disco">
-            </a>
-        </nav>
     </header>
 
     <section class="content">
@@ -97,8 +85,8 @@
         <div class="footer__copyright">
             <li>
                 <a href="#">
-                    <img src="./assets/images/logo-aguja.png" class="footer__logo-aguja">
-                    <img src="./assets/images/logo-disco.png" class="footer__logo-disco">
+                    <img src="./assets/images/logo-aguja.png" class="footer__logo-disco-aguja aguja">
+                    <img src="./assets/images/logo-disco.png" class="footer__logo-disco-aguja disco">
                 </a>
             </li>
             <p>© BCN Festival 2020</p>
@@ -109,7 +97,5 @@
             <i class="fa fa-google-plus" aria-hidden="true"></i>
         </div>
     </footer>
-
-    <script src="./assets/js/el-festival.js"></script>
   </body>
 </html>

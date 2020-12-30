@@ -19,7 +19,8 @@
           "ignoreAtRules": [
             "use",
             "mixin",
-            "include"
+            "include",
+            "tailwind"
           ]
         }
       ]

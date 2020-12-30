@@ -1,0 +1,18 @@
+/* Import Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Componentes */
+@import "components/header";
+@import "components/mobile-header";
+@import "components/footer";
+@import "el-festival/components/articulo";
+@import "grupos/components/group-list";
+
+/* Import common layout */
+@import "./common";
+
+/* Import page layouts */
+@import "el-festival/layout";
+@import "grupos/layout";
